@@ -39,7 +39,7 @@ ApplicationWindow {
             transitions: [
                 Transition {
                     AnchorAnimation {
-                        duration: 200
+                         duration: 200
                     }
                 }
             ]
