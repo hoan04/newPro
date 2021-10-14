@@ -9,9 +9,11 @@ Window {
     Column {
         id: col
         property int selectedIndex: 1
-        spacing: 5
+        property int numberModel: 3
+        property int mountSpacing: 5
+        spacing: mountSpacing
         Repeater {
-            model: 3
+            model: col.numberModel
             Rectangle{
                 id: rect
                 height: 100
@@ -30,7 +32,7 @@ Window {
                     anchors.leftMargin: 10
                     id: txt
                     anchors.right: parent.right
-                    text: 2 - index  + 1
+                    text: col.numberModel - index
                 }
                 MouseArea{
                     anchors.fill: parent
