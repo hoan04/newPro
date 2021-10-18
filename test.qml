@@ -46,3 +46,5 @@ ApplicationWindow {
         }
     }
 }
+
+Speedometer|speedometer Unit changed|onCanSignalReceived, SpeedometerUnits =
